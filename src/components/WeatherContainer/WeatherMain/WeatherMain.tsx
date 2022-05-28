@@ -28,22 +28,22 @@ const WeatherMain: FC<IPropsType> = ({ params, currentWeather }) => {
             <ChoiceIcon value={description} />
           </div>
           <div className='weather__temp'>
-            <span>Среднесуточная t°</span>
+            <span>Average daily t°</span>
             <div>
               {temp} <span>°C</span>
             </div>
           </div>
           <ul className='weather__list'>
             <li className='weather__item'>
-              Вероятность осадков:
+              Chance of precipitation:
               <span> {pop}%</span>
             </li>
             <li className='weather__item'>
-              Влажность:
+              Humidity:
               <span> {humidity}%</span>
             </li>
             <li className='weather__item'>
-              Ветер:
+              Wind:
               <span> {windSpeed}</span> м/c
             </li>
           </ul>
@@ -53,7 +53,7 @@ const WeatherMain: FC<IPropsType> = ({ params, currentWeather }) => {
             {params.name}
             {params.country && ','} <span>{params.country}</span>
           </div>
-          <div>Население: {population}</div>
+          <div>Population: {population}</div>
           <div>{date}</div>
           <div>{description}</div>
         </div>

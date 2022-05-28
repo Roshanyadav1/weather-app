@@ -20,9 +20,9 @@ const Search = () => {
   return (
     <div className='search'>
       <form className='search-form' onSubmit={onSearchCity}>
-        <input type='text' placeholder='Введите город' value={value} onChange={onHandlerChange} />
+        <input type='text' placeholder='Enter city' value={value} onChange={onHandlerChange} />
         <button>
-          <CgSearch /> Поиск
+          <CgSearch /> Search
         </button>
       </form>
     </div>

@@ -92,7 +92,7 @@ const ChartWeather = () => {
   };
   return (
     <div className='ChartWeather'>
-      <h3>Температура °C</h3>
+      <h3>Temperature °C</h3>
       <Chart options={data.options} series={data.series} type='area' height={350} />
     </div>
   );

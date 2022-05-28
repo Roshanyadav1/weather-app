@@ -19,7 +19,7 @@ const WeatherContainer = () => {
   const error = useAppSelector(state => state.weather.error);
 
   useEffect(() => {
-    dispatch(getWeather('new york'));
+    dispatch(getWeather('khategaon'));
   }, []);
 
   useEffect(() => {
@@ -29,6 +29,8 @@ const WeatherContainer = () => {
   if (isPending || !weatherCity) return <Preloader />;
   if (!days || error) return <ErrorLoad />;
 
+  console.log(days)
+  console.log(weatherCity)
   return (
     <div className='weather-container'>
       <WeatherMain params={weatherCity!} currentWeather={currentWeather!} />

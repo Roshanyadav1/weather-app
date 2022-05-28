@@ -90,7 +90,7 @@ const ErrorLoad = () => {
           <span className='drop'></span>
         </div>
 
-        <div className='text'>Произошла ошибка </div>
+        <div className='text'>An error has occurred</div>
       </div>
     </div>
   );
