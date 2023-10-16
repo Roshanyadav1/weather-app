@@ -1,6 +1,6 @@
 # Weather App
 
-### Используемый Stack
+### Technology Stack
 
 - React
 - Redux
